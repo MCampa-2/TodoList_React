@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --oxford-blue: #0b132bff;
+    --space-cadet: #1c2541ff;
+    --yinmn-blue: #3a506bff;
+    --verdigris: #5bc0beff;
+    --white: #ffffffff;
+}
+
+
+
+.container{
+    border: 1px solid var(--oxford-blue);
+    margin: 50px auto;
+    height: auto;
+    width: 300px;
+    padding: 20px;
+    background-color: var(--verdigris);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--yinmn-blue);
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+form h1{
+    color: var(--white);
+    font-family: sans-serif;
+    margin: 10px;
+}
+
+form input{
+    padding: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+}
+
+form button{
+    padding: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: var(--oxford-blue);
+    color: var(--white);
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: var(--space-cadet);
+}
+
+ul{
+    padding: 10px;
+}
+
+ul li{
+    color: var(--oxford-blue);
+    font-size: 1.2rem;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--white);
+    padding: 5px;
+    box-shadow: 2px 2px 4px var(--oxford-blue);
+    margin: 5px;
+}
+
+.delete{
+    background-color: var(--yinmn-blue);
+    color: var(--white);
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.delete:hover{
+    background-color: var(--oxford-blue);
+
+}
