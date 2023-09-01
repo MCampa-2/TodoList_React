@@ -21,11 +21,13 @@ function addTodo(e){
   }
   
 }
+
+const styles = {textDecoration: isDone? "line-through" : "none"};
  
 function handleChange(){
  setIsDone(!isDone);
- console.log("checked")
 }
+
 
 
 
@@ -39,7 +41,7 @@ function handleChange(){
         </span>
       </form>
       <ul>
-        {todos.map((item,index) => <li key={index}><input type="checkbox" onChange={handleChange} style={{textDecoration: isDone? "line-through": "none"}}></input>{item}</li>)}
+        {todos.map((item,index) => <li style={styles} key={index}><input type="checkbox" onChange={handleChange} value={isDone}></input>{item}</li>)}
       </ul>
     </div>
   );
